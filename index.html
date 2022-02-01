@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100&family=Roboto:ital,wght@0,100;1,300&family=Spartan:wght@700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <nav class="menu">
+            <div class="menu-header closed">
+                <img src="assets/logo.svg" alt="Imagem logo" id="logo">
+                <img src="assets/menu.svg" alt="Imagem menu" id="icon-menu" onclick="click">
+            </div>
+            <ul>
+                <li class="menu-itens input-group">
+                    <img src="assets/search.svg" alt="">
+                    <input type="text" id="input-search" placeholder="Buscar">
+                </li>
+                <li class="menu-itens">
+                    <img src="assets/grid.svg" alt="Imagem dashboard">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="menu-itens">
+                    <img src="assets/pet.svg" alt="Imagem pets">
+                    <a href="#">Pets</a>
+                </li>
+                <li class="menu-itens">
+                    <img src="assets/user.svg" alt="Imagem cliente">
+                    <a href="#">Clientes</a>
+                </li>
+                <li class="menu-itens">
+                    <img src="assets/vet.svg" alt="Imagem veterinario">
+                    <a href="#">Vets</a>
+                </li>
+                <li class="menu-itens">
+                    <img src="assets/settings.svg" alt="Imagem configurações">
+                    <a href="#">Ajustes</a>
+                </li>
+            </ul>
+            <div class="menu-footer">
+                <div class="user-info">
+                    <img src="assets/photo.jpg" alt="Imagem do perfil do veterinário">
+                    <div>
+                        <p id="user-name">Eleonor Penas</p>
+                        <small id="user-prof">Veterinária</small>
+                    </div>
+                </div>
+                <img src="assets/log-out.svg" alt="Imagem log-out">
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h2>Dashboard</h2>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
