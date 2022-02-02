@@ -7,15 +7,17 @@
 
 body {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: auto 1fr;
 }
 
 header {
     height: 100vh;
-    background-color: #18C29C;
-}
+    background-color: #18c29c;
+    width: 250px;
+    transition: width ease-in-out .4s;
+  }
 
-.menu .menu-header {
+.menu-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
@@ -30,20 +32,20 @@ header {
     padding: 1.3rem 1.3rem 0 1.3rem;
 }
 
-.menu .menu-itens {
+.menu-itens {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 1.2rem
+    gap: 1.2rem;
 }
 
-.menu .menu-itens a {
+.menu-itens a {
     text-decoration: none;
     color: #084236;
     font-size: 1.2rem;
 }
 
-.menu .menu-itens.input-group {
+.menu-itens.input-group {
     background-color: #8ED7C6;
     display: flex;
     align-items: center;
@@ -54,17 +56,14 @@ header {
     margin-left: -10px;
 }
 
-.menu .menu-itens.input-group:active {
-    outline: 1px solid #000;
-}
-
-.menu .menu-itens.input-group input {
+.menu-itens.input-group input {
     background-color: #8ED7C6;
     border: none;
     outline: none;
     height: 100%;
     padding: .5rem;
     margin-left: -10px;
+    width: 100px;
 }
 
 .menu-footer {
@@ -75,6 +74,11 @@ header {
     position: absolute;
     bottom: 0;
     padding: 1rem;
+    transition: all ease-in-out .4s;
+}
+
+.menu-footer.active {
+    opacity: 1;
 }
 
 .user-info {
@@ -89,9 +93,14 @@ header {
     border-radius: 1.1rem;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 
 main {
     padding: 1rem;
+    background-color: lightblue;
 }
 
 main h2 {
@@ -99,21 +108,17 @@ main h2 {
     display: flex;
 }
 
-
 .active {
     width: 65px;
     overflow: hidden;
-}
-
-.display-none {
-    display: none;
+    transition: all ease-in-out .4s;
 }
 
 .btn-search {
     width: 42px;
 }
 
-.translate-main {
-    transform: translateX(-185px);
-    transition-duration: 1s;
+.display-none {
+    display: none;
 }
+
